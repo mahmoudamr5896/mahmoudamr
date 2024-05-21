@@ -1,7 +1,26 @@
-import React from 'react'
-import section_1 from '@/Components/section_1'
+import React from 'react';
+import Section from '@/components/Section';
+import Section_2 from '@/components/Section_2';
+import Contactus from '@/components/Contactus';
+import Team from '@/components/Team';
+import Menu from '@/components/Menu';
+import Sentmate from '@/components/Sentmate';
+
 export default function home() {
   return (
-    <><section_1></section_1><div>home</div></>
+    
+    <div className='container'>   
+    <div>
+          <Section></Section>
+          </div>    
+    <div>
+      <Section_2></Section_2>
+</div>  
+<div>
+    <Menu></Menu>
+</div>  
+<Sentmate></Sentmate>
+     <Team></Team>
+    </div>
   )
 }
