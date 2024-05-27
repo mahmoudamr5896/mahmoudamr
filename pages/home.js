@@ -7,7 +7,7 @@ import Menu from '@/components/Menu';
 import Sentmate from '@/components/Sentmate';
 import About from '@/components/About';
 // components/Menu.js
-import SomeModule from 'next/document'; // Correct import example
+// import SomeModule from 'next/document'; // Correct import example
 
 export default function home() {
   return (
