@@ -19,14 +19,14 @@ export default function Section() {
           */} </div>
         </div>
         <div className="carousel-item">
-        <img src="https://images.pexels.com/photos/9650084/pexels-photo-9650084.jpeg?auto=compress&cs=tinysrgb&w=600" className="d-block w-100" alt="Wild Landscape" height={'700px'} />
+        <img src="https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=600" className="d-block w-100" alt="Wild Landscape" height={'700px'} />
           <div className="carousel-caption d-none d-md-block">
             {/* <h5>Second slide label</h5>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
           </div>
         </div>
         <div className="carousel-item">
-        <img src="https://images.pexels.com/photos/9650084/pexels-photo-9650084.jpeg?auto=compress&cs=tinysrgb&w=600" className="d-block w-100" alt="Wild Landscape" height={'700px'} />
+        <img src="https://images.pexels.com/photos/745471/pexels-photo-745471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="d-block w-100" alt="Wild Landscape" height={'700px'} />
           <div className="carousel-caption d-none d-md-block">
           {/* <h5>Third slide label</h5> */}
             {/* <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}

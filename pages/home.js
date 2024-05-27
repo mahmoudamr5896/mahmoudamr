@@ -6,6 +6,8 @@ import Team from '@/components/Team';
 import Menu from '@/components/Menu';
 import Sentmate from '@/components/Sentmate';
 import About from '@/components/About';
+// components/Menu.js
+import SomeModule from 'next/document'; // Correct import example
 
 export default function home() {
   return (
@@ -16,7 +18,7 @@ export default function home() {
     </div>  
     <div className=''>
       <Section_2></Section_2>
-      <About></About>
+      <About id='about'></About>
 </div>  
 <div>
     <Menu></Menu>

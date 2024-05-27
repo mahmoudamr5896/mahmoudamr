@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "mahmoud Amr",
+      "emial": "mahnmoudamr5896@gmail.com",
+      "password": "123athdg"
+    }
+  ],
+  "Bookstable": [
+    {
+      "id": "12",
+      "Username": "mahmoud",
+      "Email": "mahmoudamr4990@gmail.com",
+      "No.People": 3,
+      "Date": "12/12/2023",
+      "massage": "sdddddddddddddddddddddd"
+    },
+    {
+      "id": "1012",
+      "name": "Mahmoud Ezat",
+      "email": "mahmoudamr5896@gmail.com",
+      "datetime": "2024-05-30",
+      "people": "3",
+      "specialRequest": "dddddddddddd"
+    }
+  ]
+}
