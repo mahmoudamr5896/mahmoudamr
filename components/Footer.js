@@ -1,73 +1,66 @@
-import React from 'react'
+// components/Footer.js
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-export default function Footer() {
+const Footer = () => {
   return (
-    <div className='container'>  <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-    <div class="container py-5">
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                <a class="btn btn-link" href="">About Us</a>
-                <a class="btn btn-link" href="">Contact Us</a>
-                <a class="btn btn-link" href="">Reservation</a>
-                <a class="btn btn-link" href="">Privacy Policy</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-                <p class="mb-2">
-                    {/* <i class="fa fa-map-marker-alt me-3">
-                        </i>*/}123 Street, New York, USA</p> 
-                <p class="mb-2">
-                    {/* <i class="fa fa-phone-alt me-3">
-                    </i> */}
-                    +012 345 67890</p>
-                <p class="mb-2">
-                    {/* <i class="fa fa-envelope me-3"></i> */}
-                    info@example.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
-                <h5 class="text-light fw-normal">Monday - Saturday</h5>
-                <p>09AM - 09PM</p>
-                <h5 class="text-light fw-normal">Sunday</h5>
-                <p>10AM - 08PM</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
-                <div class="position-relative mx-auto" style={{maxWidth: "400px;"}}>
-                    <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email"/>
-                    <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
-                </div>
-            </div>
+    <footer style={styles.footer}>
+      <div style={styles.container}>
+        <p style={styles.text}>Connect with me:</p>
+        <div style={styles.socialIcons}>
+          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          </a>
+          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" style={styles.icon}>
+            <FontAwesomeIcon icon={faTwitter} size="2x" />
+          </a>
         </div>
-    </div>
-    <div class="container">
-        <div class="copyright">
-            <div class="row">
-                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-                    
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <div class="footer-menu">
-                        <a href="">Home</a>
-                        <a href="">Cookies</a>
-                        <a href="">Help</a>
-                        <a href="">FQAs</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div></div>
-  )
-}
+        <p style={styles.copyright}>
+          © {new Date().getFullYear()} Your Name. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+const styles = {
+  footer: {
+    padding: '2rem 0',
+    backgroundColor: '#0f0f23',
+    color: '#fff',
+    textAlign: 'center',
+  },
+  container: {
+    maxWidth: '1200px',
+    margin: '0 auto',
+    padding: '0 2rem',
+  },
+  text: {
+    fontSize: '1.2rem',
+    marginBottom: '1rem',
+  },
+  socialIcons: {
+    display: 'flex',
+    justifyContent: 'center',
+    gap: '1.5rem',
+    marginBottom: '1rem',
+  },
+  icon: {
+    color: '#fff',
+    textDecoration: 'none',
+    transition: 'color 0.3s',
+  },
+  iconHover: {
+    color: '#6c63ff',
+  },
+  copyright: {
+    fontSize: '0.9rem',
+    marginTop: '1rem',
+  },
+};
+
+export default Footer;
